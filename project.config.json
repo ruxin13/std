@@ -1,0 +1,58 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wxc243c3f2cdc08553",
+	"projectname": "wxc243c3f2cdc08553",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "数胎动",
+					"pathName": "pages/std/std",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "选孕周",
+					"pathName": "pages/birth/birth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "历史记录",
+					"pathName": "pages/history/history",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "计胎动",
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "usingComponents": {
+    "amodal": "/components/modal/modal"
+  }
+}

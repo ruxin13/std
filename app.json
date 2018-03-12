@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/std/std",
+    "pages/birth/birth",
+		"pages/history/history"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "计胎动",
+    "navigationBarTextStyle":"black"
+  }
+}

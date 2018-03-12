@@ -1,0 +1,142 @@
+/* pages/birth/birth.wxss */
+page{
+	background: #F8F8F8;
+}
+.birth-tit{
+	padding-top: 60rpx;
+}
+.birth-img{
+	width: 694rpx;
+	height: 104rpx;
+	display: block;
+	margin: 0 auto;
+}
+.birth-stit{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50rpx;
+}
+.birth-stit text{
+	font-size: 28rpx;
+	color: #333333;
+	letter-spacing: 2rpx;
+}
+.icon-info{
+	width: 32rpx;
+	height: 32rpx;
+	display: block;
+	margin-left: 11rpx;
+}
+.birth-main{
+	background-color: #fff;
+	box-shadow: 0 32rpx 84rpx 40rpx rgba(74, 74, 74, .08);
+	border-radius: 12rpx;
+	width: 680rpx;
+	padding: 60rpx 40rpx 130rpx;
+	box-sizing: border-box;
+	margin: 0 auto;
+  position: relative;
+}
+.birth-mtit{
+  font-size: 24rpx;
+  color: #333333;
+  text-align: center;
+}
+.birth-mtit text{
+  font-size: 60rpx;
+  color: #111111;
+  margin-right: 20rpx;
+}
+slider{
+  margin: 20rpx 0;
+}
+.weeks{
+  margin-bottom: 56rpx;
+}
+.birth-nums{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.birth-nums text{
+  font-size: 24rpx;
+  color: #333333;
+  font-family: "Roboto-Light", serif;
+  padding-top: 10rpx;
+}
+.btn-next{
+  width: 136rpx;
+  height: 136rpx;
+  border-radius: 50%;
+  background-image: linear-gradient(151deg, #FD7292 0%, #FD5F31 92%, #FD5E2C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 50%, 0);
+}
+.btn-next image{
+  width: 24rpx;
+  height: 44rpx;
+}
+.info-t2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #333333;
+  text-align: center;
+}
+.info-l2{
+  width: 50%;
+}
+.info-r2{
+  flex: 1;
+}
+.info-t2t{
+  width: 576rpx;
+}
+.info-t2-img{
+  width: 576rpx;
+  height: 60rpx;
+  display: block;
+}
+.info-t2-bar{
+  width: 100%;
+  height: 4rpx;
+  background-image: linear-gradient(-45deg, #FF8E64 0%, #FFC94D 100%);
+}
+.info-nums{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-nums text{
+  font-size: 24rpx;
+  color: #333333;
+}
+.info-nums text:first-child{
+  width: 50%;
+}
+.info-nums text:nth-child(2){
+  text-align: left;
+  flex: 1;
+  transform: translateX(-12rpx);
+}
+.info-i{
+  font-size: 24rpx;
+  color: #979797;
+  line-height: 38rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.info-p{
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 48rpx;
+  text-indent: 2em;
+  padding: 8rpx 0;
+}

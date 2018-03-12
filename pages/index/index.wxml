@@ -1,0 +1,7 @@
+
+<image class='index-logo' src='{{CDN_URL}}/img/logo.png'></image>
+
+
+<image class='index-tit' src='{{CDN_URL}}/img/index_tit.png'></image>
+
+<view class='index-txt'><view class='text'>华大母婴</view><view class='index-d'>/</view><view class='text'>见证宝宝健康</view></view>

@@ -1,0 +1,16 @@
+<view hidden="{{modalHidden}}">
+  <view class="modal-mask {{modalClass}}">
+    <view class="modal-main">
+      <view class="modal-top">
+        <image wx:if="{{modalTit}}" class="modal-tit-img" src="{{CDN_URL}}{{modalTit}}"></image>
+        <view wx:else class="modal-tit">{{modalTitle}}</view>
+        <image class="modal-close" src="{{CDN_URL}}/img/close.png" bindtap="bindTapCloseModal"></image>
+      </view>
+      <view class="modal-body">
+        <slot>
+          {{modalMsg}}
+        </slot>
+      </view>
+    </view>
+  </view>
+</view>

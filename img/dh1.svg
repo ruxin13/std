@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>aq1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="94.8160122%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#5BA5FF" offset="0%"></stop>
+            <stop stop-color="#4DDBFF" offset="83.26022%"></stop>
+            <stop stop-color="#5BDCEB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="小程序-3计数页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-38.000000, -148.000000)" opacity="0.1">
+        <g id="q1" transform="translate(12.000000, 138.000000)" fill="url(#linearGradient-1)">
+            <path d="M166,292 C233.378739,292 288,227.378739 288,160 C288,92.6212605 233.378739,28 166,28 C98.6212605,28 44,92.6212605 44,160 C44,227.378739 98.6212605,292 166,292 Z" id="Oval-4" transform="translate(166.000000, 160.000000) rotate(-70.000000) translate(-166.000000, -160.000000) "></path>
+        </g>
+    </g>
+</svg>

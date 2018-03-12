@@ -1,0 +1,128 @@
+
+<view class='std-tit'>
+  <image class='std-img' src='{{CDN_URL}}/img/std.png'></image>
+  <image class="std-vol" src="{{volSwitch ? '/img/'+theme[curTheme-1].tit+'_on.png':'/img/'+theme[curTheme-1].tit+'_off.png'}}" bindtap="bindVolSwitch"></image>
+</view>
+<view class='std-stit' bindtap="bindTapInfo">
+  <text>孕周{{weeks}}{{days > 0 ? '+' + days + '天' : '周'}}，预产期是{{birthDateStr}}</text>
+  <image class='icon-info' src='{{CDN_URL}}/img/icon_info.png'></image>
+</view>
+
+
+<view class="std-mbg">
+
+  <image class="std-svg {{playing ? 'an-svg' : ''}}1" src="/img/{{theme[curTheme-1].tit}}1.svg"></image>
+  <image class="std-svg {{playing ? 'an-svg' : ''}}2" src="/img/{{theme[curTheme-1].tit}}2.svg"></image>
+  <image class="std-svg {{playing ? 'an-svg' : ''}}3" src="/img/{{theme[curTheme-1].tit}}3.svg"></image>
+
+  <view class="std-bg theme{{curTheme}}"></view>
+
+    <!--未开始-->
+    <block wx:if="{{status==0}}">
+      <view class="std-main theme{{curTheme}}" bindtap="bindTapStart">
+        <view class="stdm-tit">开始计数</view>
+        <image class="stdm-btn" src="{{CDN_URL}}/img/play.png"></image>
+        <view class="stdm-stxt">5分钟内点击算1次</view>
+      </view>
+    </block>
+
+    <!--计数中 -->
+    <block wx:elif="{{status==1}}">
+      <view class="std-bga {{wave}} theme{{curTheme}}"></view>
+      <view class="std-main theme{{curTheme}}" bindtap="bindTapCount">
+        <view class="stdm-txt">动一下 / 点一下</view>
+        <view class="stdm-time">{{timeStr}}</view>
+        <view class="stdm-stxt">5分钟内点击算1次</view>
+      </view>
+    </block>
+
+      <!--结束-->
+    <block wx:elif="{{status==2}}">
+      <view class="std-main theme{{curTheme}}" bindtap="bindTapRestart">
+        <view class="stdm-atxt">点击重新计胎动</view>
+        <view class="stdm-atit">{{validHit < 3 ? '胎动偏少' : '胎动正常' }}</view>
+        <view class="stdm-astit">有效<text>{{validHit}}</text>次</view>
+      </view>
+    </block>
+
+  <!--<block wx:elif="{{status==2}}">-->
+    <!--<view class="std-main theme{{curTheme}}" bindtap="bindTapRestart">-->
+      <!--<view class="stdm-txt">再次点击重新计胎动</view>-->
+      <!--<view class="stdm-re">-->
+        <!--<view class="stdm-b">-->
+          <!--<view class="stdm-bm">{{validHit}}</view>-->
+          <!--<view class="stdm-bs">次</view>-->
+        <!--</view>-->
+        <!--<view class="stdm-b">-->
+          <!--<view class="stdm-bm">1</view>-->
+          <!--<view class="stdm-bs">小时</view>-->
+        <!--</view>-->
+      <!--</view>-->
+    <!--</view>-->
+  <!--</block>-->
+
+    <view class="std-btn-wrap" bindtap="bindTapHistory">
+      <view class="std-history theme{{curTheme}}">
+        <image src="{{CDN_URL}}/img/history.png"></image>
+      </view>
+      <view class="std-his-txt">胎动记录</view>
+    </view>
+
+    <view class="std-btn2-wrap" bindtap="bindTapMod">
+      <view class="std-history theme{{curTheme}}">
+        <image src="{{CDN_URL}}/img/mod.png"></image>
+      </view>
+      <view class="std-his-txt">修改孕周</view>
+    </view>
+  </view>
+
+
+
+<view class="times">
+  <view class="times-l">
+    <view class="times-tit">{{validHit}}</view>
+    <view class="times-stit">有效</view>
+  </view>
+  <view class="times-c">/</view>
+  <view class="times-l">
+    <view class="times-tit">{{invalidHit}}</view>
+    <view class="times-stit">点击</view>
+  </view>
+</view>
+
+<view class="themes">
+  <block wx:for="{{theme}}" wx:key="item">
+    <view class="theme t{{item.id}} {{curTheme==item.id ? 'cur': ''}}" data-id="{{item.id}}" bindtap="bindChangeTheme">
+      <view class="theme-bgcir">
+        <view class="theme-cir"></view>
+        <view wx:if="{{curTheme==item.id}}" class="theme-cir-an"></view>
+      </view>
+      <view class="theme-text">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+
+
+<amodal modal-hidden="{{modal.modalHide}}" modal-title="{{modal.modalTitle}}" modal-class="{{modal.modalClass}}" modal-tit="{{modal.modalTit}}">
+  <view class="info-text">{{modal.modalMsg}}</view>
+  <view class="info-t">
+    <view class="info-l">
+      <view class="info-txt">胎动过少</view>
+      <view class="info-bar info-bar-l"></view>
+    </view>
+    <view class="info-r">
+      <view class="info-txt">胎动正常</view>
+      <view class="info-bar info-bar-r"></view>
+    </view>
+  </view>
+  <view class="info-nums">
+    <text>0</text>
+    <text>24</text>
+    <text>100</text>
+  </view>
+  <view class="info-i">（次 / 12小时）</view>
+  <view class="info-con">
+    <view class="info-p">胎动变化规律具有"生物钟"的现象，在一天之内胎动次数有变化，上午8~12时胎动均匀，以后逐渐减少，下午2~3时减至最少，晚上8~11时又增加至最多。当宫内缺氧或应用镇静药时，胎动次数减少或消失。</view>
+    <view class="info-p">正常情况下，如果胎动次数每小时少于3次或12小时少于24次，提示胎儿宫内缺氧。需要进一步观察或咨询医生； 如果12小时胎动少于24次，则为异常;少于10次，则表明胎儿有危险，在子宫内有缺氧现象。</view>
+  </view>
+</amodal>

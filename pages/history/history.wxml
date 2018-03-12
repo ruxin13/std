@@ -1,0 +1,49 @@
+<view class="his-bg" style="background-image:url({{CDN_URL}}/img/his_bg.png)">
+  <image class="his-tit" src="{{CDN_URL}}/img/his_tit.png"></image>
+  <view class="his-stit">
+    <view class="his-stit-txt">孕周{{weeks}}{{days > 0 ? '+' + days + '天' : '周'}}，已成功记录{{list.length}}次</view>
+    <!--<image class="his-info" src="{{CDN_URL}}/img/icon_info_w.png"></image>-->
+  </view>
+  <view class="his-main">
+
+    <view class="his-group">
+
+      <block wx:if="{{renderList.length == 0}}">
+        <view class="nodata">暂无记录</view>
+      </block>
+
+      <block wx:else>
+
+        <block wx:for="{{renderList}}" wx:key="it" wx:for-item="items" wx:for-index="tindex">
+          <block wx:for="{{items}}" wx:key="hi" wx:for-item="his" wx:for-index="hindex">
+
+            <view wx:if="{{his.isTop && tindex!=0}}" class="his-space">
+              <view class="his-l"></view>
+              <view class="his-r"></view>
+            </view>
+
+            <block wx:if="{{his.isTop}}">
+              <view class="his-date">
+                <view class="his-l">{{his.date}}</view>
+                <image class="his-icon-r" src="{{CDN_URL}}/img/his_r.png"></image>
+                <view class="his-r">
+                  <view class="his-m-tit">记录胎动{{his.totalTimes}}次</view>
+                </view>
+              </view>
+            </block>
+
+            <view class="his-row">
+              <view class="his-l">{{his.timeStr}}</view>
+              <view class="his-c"></view>
+              <view class="his-r {{his.isEnd ? 'bottom':''}}">记录胎动1次</view>
+              <view wx:if="{{his.isEnd}}" class="his-bmask"></view>
+            </view>
+
+          </block>
+        </block>
+      </block>
+
+    </view>
+
+  </view>
+</view>

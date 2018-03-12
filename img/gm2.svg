@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>cq2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FF8E64" offset="0%"></stop>
+            <stop stop-color="#FFC94D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="小程序-3计数结束3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-37.000000, -148.000000)" opacity="0.1">
+        <g id="q2" transform="translate(37.000000, 148.000000)" fill="url(#linearGradient-1)">
+            <path d="M161,282 C228.378739,282 283,217.378739 283,150 C283,82.6212605 228.378739,18 161,18 C93.6212605,18 39,82.6212605 39,150 C39,217.378739 93.6212605,282 161,282 Z" id="Oval-4"></path>
+        </g>
+    </g>
+</svg>

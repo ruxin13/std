@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>q3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.9609375%" y1="-84.547061%" x2="177.634805%" y2="200.007253%" id="linearGradient-1">
+            <stop stop-color="#FD7292" offset="0%"></stop>
+            <stop stop-color="#FD6F83" offset="14.7491568%"></stop>
+            <stop stop-color="#FD5E2C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="小程序-3胎动计数" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-38.000000, -148.000000)" opacity="0.1">
+        <g id="Group-3" transform="translate(9.000000, 128.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-2">
+                <g id="q3">
+                    <path d="M179,312 C246.378739,312 301,247.378739 301,180 C301,112.621261 246.378739,48 179,48 C111.621261,48 57,112.621261 57,180 C57,247.378739 111.621261,312 179,312 Z" id="Oval-4" transform="translate(179.000000, 180.000000) rotate(-140.000000) translate(-179.000000, -180.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

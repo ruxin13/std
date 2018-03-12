@@ -1,0 +1,67 @@
+
+	<view class='birth-tit'>
+		<image class='birth-img' src='{{CDN_URL}}/img/birth.png'></image>
+	</view>
+	<view class='birth-stit' bindtap="bindTapInfo">
+		<text>从20周起宝宝胎动才会明显</text>
+		<image class='icon-info' src='{{CDN_URL}}/img/icon_info.png'></image>
+	</view>
+
+	<view class='birth-main'>
+		<view class="weeks">
+      <view class="birth-mtit"><text>{{weeks}}</text>周</view>
+			<slider min='0' max='42' step='1' value='{{weeks}}' backgroundColor="#cccccc" activeColor="#F4511E" bindchange="bindChangeWeeks" bindchanging="bindChangingWeeks"></slider>
+      <view class="birth-nums">
+        <text>0</text>
+        <text>10</text>
+        <text>20</text>
+        <text>30</text>
+        <text>42</text>
+      </view>
+		</view>
+
+		<view class="days">
+      <view class="birth-mtit"><text>+{{days}}</text>天</view>
+			<slider min='0' max='6' step='1' value='{{days}}' backgroundColor="#cccccc" activeColor="#F4511E" bindchange="bindChangeDays" bindchanging="bindChangingDays"></slider>
+      <view class="birth-nums">
+        <text>0</text>
+        <text>1</text>
+        <text>2</text>
+        <text>3</text>
+        <text>4</text>
+        <text>5</text>
+        <text>6</text>
+      </view>
+		</view>
+
+    <view class="btn-next" bindtap="bindNext">
+      <image src="{{CDN_URL}}/img/go.png"></image>
+    </view>
+
+	</view>
+
+
+  <amodal modal-hidden="{{modal.modalHide}}" modal-title="{{modal.modalTitle}}" modal-class="{{modal.modalClass}}" modal-tit="{{modal.modalTit}}">
+    <view class="info-text">{{modal.modalMsg}}</view>
+    <view class="info-t2">
+      <view class="info-l2">胎动微弱期</view>
+      <view class="info-r2">胎动活跃期</view>
+    </view>
+    <view class="info-t2t">
+      <image class="info-t2-img" src="{{URL_CDN}}/img/info_t2.png"></image>
+      <view class="info-t2-bar"></view>
+    </view>
+    <view class="info-nums">
+      <text>0</text>
+      <text>20</text>
+      <text>40</text>
+    </view>
+    <view class="info-i">（单位 / 周）</view>
+    <view class="info-con">
+      <view class="info-p">胎动是胎儿不规律的肢体活动，腹壁较薄的孕妇可在腹部看到胎儿的滑动，有时能感到胎儿肢体撞击腹部。正常情况下，妊娠20周左右孕妇便感觉到有胎动，20周后胎动次数逐渐增多，到28~32周时达高峰，32周后又逐渐减少，过期妊娠(孕42周后)胎动次数减少更为明显。</view>
+      <view class="info-p">在妊娠28周后，胎动部位多在中上腹，很少出现小腹下部。如果小腹下部经常出现胎动，则可视为异常，表明胎位不正常，多为臀位或横位，容易造成分娩困难，应及时就诊。</view>
+    </view>
+
+
+
+  </amodal>
